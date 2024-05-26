@@ -44,6 +44,13 @@ h2 {
     transition: 0.1s;
 }
 
+#round-results {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #0e293c
+    color: #ffffff;
+}
+
 #rps-scoreboard {
     width: 500px;
     margin: 0 auto;
