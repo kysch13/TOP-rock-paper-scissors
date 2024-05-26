@@ -44,11 +44,16 @@ h2 {
     transition: 0.1s;
 }
 
+
 #round-results {
-    display: inline-block;
+    display: none;
     padding: 8px 20px;
-    background-color: #0e293c
-    color: #ffffff;
+    color: #fff;
+    border-radius: 25px;
+    font-size: 22px;
+    background: #85cfff;
+    color: #2788c9;
+    margin-top: 25px;
 }
 
 #rps-scoreboard {
@@ -133,5 +138,67 @@ h2 {
 
 }
 
+#gameover-popup {
+    display: none;
+}
+
+#gameover-popup::before {
+    content: "";
+    background: #333d;
+    mix-blend-mode: multiply;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#gameover {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
 
 
+.popup {
+    background: #fff;
+    width: 30%;
+    margin: auto;
+    border-radius: 10px;
+    filter: drop-shadow(0 4px 6px #333);
+    color: #333;
+    padding: 20px;
+}
+
+.popup-title {
+    font-size: 46px;
+    margin: 0;
+}
+
+.popup-msg {
+    font-family: sans-serif;
+}
+
+#playAgainBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 26px;
+    background: #12669e;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    color: #fff;
+    filter: drop-shadow(0 4px 0 #0a4770);
+}
+
+#playAgainBtn:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1) drop-shadow(0 4px 0 #0a4770);
+}
+
+#gameover-popup.active-popup {
+    display: block;
+}

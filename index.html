@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <title>Rock Paper Scissors</title>
-  <script src='rps.js'></script>
+  <link rel="stylesheet" href="rps.css" >
+  <script src='rps.js' defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="rps.css">
+  
 </head>
 <body>
   <section id="rps-main">
@@ -42,7 +43,7 @@
         </div>
       </div>
       <div id="round-results">
-        
+
       </div>
       <div id="rps-scoreboard">
         <div><h2>SCORE</h2></div>
@@ -63,5 +64,15 @@
       </div>
     </div>
   </section>
+  <section id="gameover-popup">
+    <div id="gameover">
+      <div class="popup">
+        <p class="popup-title">GAME OVER</p>
+        <p class="popup-msg"></p>
+        <div id="playAgainBtn">Play Again</div>
+      </div>
+    </div>
+  </section>
+
 </body>
 </html>
