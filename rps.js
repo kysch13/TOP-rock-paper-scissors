@@ -16,7 +16,7 @@ function getComputerChoice() {
 }
 
 function getHumanChoice() {
-    const choice = window.prompt('Please choose Rock, Paper, or Scissors');
+    //const choice = window.prompt('Please choose Rock, Paper, or Scissors');
     return choice;
 }
 
@@ -81,9 +81,10 @@ function playRound(humanChoice, computerChoice) {
 }
 
 function playGame(){
-    for (let i=0; i < 5; i++) {
+    
+    //for (let i=0; i < 5; i++) {
         playRound(getHumanChoice(), getComputerChoice());
-    }
+    //}
     console.log(`Your score: ${humanScore} | Computer score: ${computerScore}`);
 }
 

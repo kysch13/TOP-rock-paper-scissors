@@ -1,0 +1,130 @@
+body {
+    font-family: 'Jaro', sans-serif;
+    background-color: #2788c9;
+    color: #ffffff;
+    text-align: center;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 48px;
+    filter: drop-shadow(0 4px 0 #33333333);
+}
+
+h2 {
+    font-size: 32px;
+}
+
+.title {
+    background-color: #12669e;
+    border-radius: 8px;
+}
+
+.divide-col > div {
+    font-size: 46px;
+    padding: 20px;
+    background: #53b4f4;
+    border-radius: 100%;
+    margin-top: 80px;
+    color: #2788c9;
+}
+
+
+#rps-stage {
+    display: flex;
+    width: 600px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.rps-hand > img {
+    mix-blend-mode: screen;
+    filter: drop-shadow(0 5px 0 #333333);
+    transition: 0.1s;
+}
+
+#rps-scoreboard {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 0px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background: #0e293c;
+    margin-top: 50px;
+}
+
+#rps-scoreboard h2 {
+    font-size: 32px;
+    margin-top: -22px;
+    margin-bottom: 0;
+    display: inline-block;
+    border: 2px solid #fff;
+    background: #0e293c;
+    padding: 5px 20px;
+    border-radius: 100px;
+}
+
+.rps-score-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.rps-score {
+    font-size: 72px;
+    margin-bottom: 15px;
+}
+
+.score-divider {
+    width: 1px;
+    height: 72px;
+    background: #3c7ba8;
+}
+
+#rps-controls {
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    gap: 25px;
+}
+
+#rps-controls > div {
+    width: 150px;
+    border-radius: 5px;
+    filter: drop-shadow(0 4px 0 #33333377);
+}
+
+#rps-controls > div > img {
+    mix-blend-mode: multiply;
+}
+
+#rps-ctrl-rock {
+    background-color: #ee4a4a;
+    border-bottom: 2px solid #d13434;
+    border-top: 2px solid #f29494;
+}
+
+#rps-ctrl-paper {
+    background-color: #4aee6e;
+    border-bottom: 2px solid #30b44d;
+    border-top: 2px solid #94ffab;
+}
+
+#rps-ctrl-scissors {
+    background-color: #f1b83c;
+    border-bottom: 2px solid #d1981b;
+    border-top: 2px solid #ffd477;
+}
+
+#rps-controls > div:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+
+}
+
+
+

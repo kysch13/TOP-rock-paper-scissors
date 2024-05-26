@@ -3,9 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <title>Rock Paper Scissors</title>
-    <script src='rps.js'></script>
+  <script src='rps.js'></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="rps.css">
 </head>
 <body>
-  <h1>RPS!!!</h1>
+  <section id="rps-main">
+    <div>
+      <h1>Ultimate ROCK-PAPER-SCISSORS</h1>
+      <div id="rps-stage">
+        <div class="player-col human">
+          <div class="title">
+            <h2>YOU</h2>
+          </div>
+          <div id="human-hand" class="rps-hand">
+              <img src="img/rps-placeholder.png" width="200" height="200">
+          </div>
+          <div id="human-choice" class="rps-text">
+
+          </div>
+        </div>
+        <div class="divide-col">
+          <div>VS.</div>
+        </div>
+        <div class="player-col computer">
+          <div class="title">
+            <h2>COMPUTER</h2>
+          </div>
+          <div id="computer-hand" class="rps-hand">
+            <img src="img/rps-placeholder.png" width="200" height="200">
+
+          </div>
+          <div id="computer-choice" class="rps-text">
+
+          </div>
+        </div>
+      </div>
+      <div id="rps-scoreboard">
+        <div><h2>SCORE</h2></div>
+        <div class="rps-score-row">
+          <div id="human-score" class="rps-score">
+            0
+          </div>
+          <div class="score-divider"></div>
+          <div id="computer-score" class="rps-score">
+            0
+          </div>
+        </div>
+      </div>
+      <div id="rps-controls">
+        <div id="rps-ctrl-rock"><img src="img/p_rock.png" alt="ROCK" width="125"></div>
+        <div id="rps-ctrl-paper"><img src="img/p_paper.png" alt="PAPER" width="125"></div>
+        <div id="rps-ctrl-scissors"><img src="img/p_scissors.png" alt="SCISSORS" width="125"></div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
