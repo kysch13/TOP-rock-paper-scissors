@@ -17,7 +17,7 @@ const gameOverPopup = document.getElementById('gameover-popup');
 const btnPlayAgain = document.getElementById('playAgainBtn');
 
 controlBtns.addEventListener("click", function(e){
-    const choice = e.originalTarget.alt;
+    const choice = e.target.alt;
     playRound(choice, getComputerChoice());
 });
 
